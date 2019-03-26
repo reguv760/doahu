@@ -1,0 +1,197 @@
+/*
+- DO NOT DELETE
+- IMD211: Week4 Assignment 1
+- Created by:  (Reginald Galang)
+*/
+
+html
+{
+	font-size:62.5%;
+	font-family: "Muli", "Helvetica", "Arial", sans-serif;
+	margin:0;
+	padding:0;
+}
+
+body
+{
+	margin:0;
+	padding:0;
+	font-size:1.6rem;
+}
+
+
+.container
+{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+.banner
+{
+	position:relative;
+	width:360px;
+	height:300px;
+	margin:0 auto;
+	background-color: #047b69;
+	animation: bannerDown 1s;
+}
+
+.header,
+.text
+{
+	color:#eee;
+	position: relative;
+	z-index:100;
+	width:100%;
+}
+
+.header h1
+{
+	padding:2rem;
+	font-family: 'Shrikhand', cursive;
+	font-size:3.2rem;
+	color:#f68f1e;
+	text-shadow: 3px 3px 1px rgba(0,0,0,0.6);
+	width: 65%;
+	letter-spacing: 0.025em;
+}
+
+.text
+{
+	margin:1rem 2rem;
+}
+
+.text h2
+{
+	padding-left:0.2rem;
+	font-family: 'Muli', sans-serif;
+	font-weight: bold;
+	font-size:2.8rem;
+	line-height: 3rem;
+	letter-spacing: 0.025em;
+	text-shadow: 3px 3px 1px rgba(0,0,0,0.6);
+	width:75%;
+}
+
+.button
+{
+	position:absolute;
+	margin:0 auto;
+	z-index: 110;
+	margin-left:2rem;
+	bottom:1rem;
+}
+
+.button img
+{
+	filter:drop-shadow(1px 1px 1px rgba(0,0,0,0.6));
+}
+
+.button h3
+{
+	font-family: 'Muli', sans-serif;
+	z-index: 1;
+	text-align: left;
+	color:#047b69;
+	font-weight:bold;
+	font-size:1.4rem;
+	line-height: 1.75rem;
+	position: absolute;
+	top:3.4rem;
+	left:8rem;
+	text-transform: uppercase;
+}
+
+.button a
+{
+	text-decoration: none;
+}
+
+.button:hover
+{
+	opacity:0.75;
+}
+
+.board
+{
+	position:absolute;
+	z-index:120;
+	right:1.6rem;
+	bottom:-0.1rem;
+}
+
+.garden
+{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:10;
+}
+
+.leaf1,
+.leaf2
+{
+	position:absolute;
+}
+
+.leaf1
+{
+	top:3.6rem;
+	left:6.4rem;
+	animation: leafShake 5s infinite;
+	animation-delay:5s;
+	transform: translate3d(0, 0px, 0px);
+}
+
+.leaf2
+{
+	bottom:4rem;
+	right:2.5rem;
+	animation: leafShakeRight 10s infinite;
+	animation-delay:5s;
+	transform: translate3d(0, 0px, 0px);
+}
+
+/* animation */
+@keyframes bannerDown {
+	0% {
+			transform: translate(0, -300px);
+			animation-timing-function: ease-out;
+	}
+
+	100%
+	{
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes loseShadow {
+
+}
+
+@keyframes leafShake {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    10% {
+      	transform: translate3d(-5px, 2px, 0px);
+    }
+    25% {
+        transform: translate3d(0px, 0px, 0px);
+				animation-timing-function: ease-in;
+    }
+}
+
+@keyframes leafShakeRight {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    5% {
+      	transform: translate3d(5px, -2px, 0px);
+    }
+    10% {
+        transform: translate3d(0px, 0px, 0px);
+				animation-timing-function: ease-in;
+    }
+}

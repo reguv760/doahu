@@ -1,0 +1,199 @@
+<!--
+- DO NOT DELETE
+- IMD211: Week6 FINAL
+- Created by:  (Reginald Galang)
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="HTML BANNERS">
+		<meta name="author" content="Reginald Galang">
+
+		<link href="https://fonts.googleapis.com/css?family=Muli|Shrikhand" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+		<script src="./js/instafeed.js"></script>
+    <title>Wk6A1 - destination:Oahu website v0.2</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<header>
+				<div class="header-area">
+					<h1>destination: <span class="oahu-font">OAHU</span></h1>
+
+					<div class="socialmedia">
+						<h3>Follow us on social media!<br/></h3>
+						<ul>
+							<li><a href="https://www.facebook.com/Hawaii/" target="_blank"><img src="./assets/icons/social/facebook.svg"/></a></li>
+							<li><a href="https://twitter.com/gohawaii" target="_blank"><img src="./assets/icons/social/twitter.svg"/></a></li>
+							<li><a href="https://www.instagram.com/gohawaii/?hl=en" target="_blank"><img src="./assets/icons/social/instagram.svg"/></a></li>
+							<li><a href="https://www.pinterest.com/gohawaii/" target="_blank"><img src="./assets/icons/social/pinterest.svg"/></a></li>
+						</ul>
+						<h3>#discoveroahu</h3>
+					</div>
+
+					<div class="slogan">
+						<h2 class="slogan_text">Discover + explore the shaka life.</h2>
+					</div>
+
+					<div class="video-container">
+						<video autoplay loop width="1280" height="720" id="videoHolder" >
+						</video>
+					</div>
+				</div>
+			</header>
+
+			<section class="content">
+				<div class="content-area">
+					<div class="column col-50">
+						<h2>Discover the island of Oahu based on our travel packages below:</h2>
+						<div class="package_deal surfboardBG">
+							<div class="package_deal-headerContainer">
+								<h1>Surfing Package:<br/> <span class="price">$899</span></h1>
+							</div>
+							<ul class="package_items">
+								<li>Waikiki Beach</li>
+								<li>North Shore</li>
+								<li>Waimea Beach</li>
+								<li>Sunset Beach</li>
+								<li>Pua’ena Point</li>
+								<li>Turtle Bay West</li>
+							</ul>
+							<p>Love the water? Love ocean beach air? Discover paddleboarding, surfing and many aquatic-based activities with this travel package that should satifsy your inner surfer.</p>
+						</div>
+
+						<div class="package_deal orchidBG">
+							<div class="package_deal-headerContainer">
+								<h1>Nature Package:<br/> <span class="price">$999</span></h1>
+							</div>
+							<ul class="package_items">
+								<li>Ahupuaa O Kahana State Park</li>
+								<li>Hoomaluhia Botanical Garden</li>
+								<li>Diamond Head State Monument</li>
+								<li>Kanealole Trail</li>
+								<li>Lyon Arboretum</li>
+							</ul>
+							<p>Like nature and wandering trails off-the-beaten path? Explore the island's lush forest and tropical fauna. Hiking gear required but camping-in is optional. Perhaps you might find a treasure of your own!</p>
+						</div>
+
+					</div>
+
+					<div class="column">
+						<div class="package_deal-headerContainer">
+							<h1>Social Media Feed</h1>
+						</div>
+						<div class="socialmedia_feedContainer">
+
+							<script type="text/javascript">
+
+									var instaContainer = document.getElementsByClassName('instafeed')[0];
+									var feed = new Instafeed({
+										get: 'user',
+										userId: 'self',
+										accessToken: '30621361.c7eb5d2.bacb0dd68b8546a7bc93fb2d456a2843',
+										template: '<a href="#" target="_blank"><img src="{{image}}" /></a>',
+										limit:9
+									});
+									feed.run();
+							</script>
+							<div id="instafeed"></div>
+						</div>
+					</div>
+
+					<div class="column banner-container">
+						<iframe class="banner" src="./assets/banner/index.html" scrolling="no"></iframe>
+					</div>
+
+				</div>
+
+				<!--- middle section -->
+				<div class="content-area list_container">
+					<div class="column col-50">
+						<img class="list_image" data-src="./assets/img/surfboards.jpg" alt="Surfboards on the Beach"/>
+					</div>
+
+					<div class="column col-50 placeInterest">
+						<div class="list_container-headerContainer">
+							<h1>Other Places of Interest</h1>
+						</div>
+						<ul>
+							<li>Pearl Harbor</li>
+							<li>Ala Moana Center</li>
+							<li>Honolulu Musuem of Art</li>
+							<li>Bishop Musuem</li>
+							<li>Dole Plantation</li>
+							<li>Mālaekahana State Recreation Area</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="content-area">
+					<div class="column col-100">
+						<h1>Oahu, Hawaii</h1>
+						<div class="text_container">
+							<div class="image_container">
+								<img data-src="./assets/img/halekulani.jpg" alt="Halekulani swimming pool"/>
+								<img data-src="./assets/img/hawaii-sunset.jpg" alt="Hawaiian Sunset"/>
+							</div>
+							<p>The island of Oahu offers a variety of entertainment, luxuries, ammenities and leisure for every walk of life.	Enjoy an ocean-side sunset at the beach with your family. Perhaps you can also take a swim at the beach or at your hotel's pool.<br/>
+							Experience the island the way you want it. </p>
+
+							<p>Check out these quotes from our satisfied travellers:</p>
+
+							<div class="content_quotes">
+								<h2>&ldquo;What an awesome deal! I travelled with my partner through this website and had an amazing experience!&rdquo;</h2>
+								<span class="quote_name"><p>- Some Dude</p></span>
+							</div>
+
+							<div class="content_quotes">
+								<h2>&ldquo;I've never been surfing before but after discovering the Oahu through this website, I purchased my own surfboard and want to look into paddleboarding, after I conquer the Banzai Pipeline!.&rdquo;</h2>
+								<span class="quote_name"><p>- Some Girl</p></span>
+							</div>
+
+							<div class="content_quotes">
+								<h2>&ldquo;An amazing deal if you want to discover a taste of Hawaii.&rdquo;</h2>
+								<span class="quote_name"><p>- Someone Important</p></span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer>
+				<div class="column col-50">
+					<h1>Sponsored by:</h1>
+					<ul class="sponsors">
+						<li><a href="https://www.gohawaii.com/islands/oahu" target="_blank">Oahu Visitors Bureau</a></li>
+						<li><a href="https://www.hvcb.org/" target="_blank">Hawaii Visitors and Convention Bureau</a></li>
+						<li><a href="https://www.hawaiitourismauthority.org/" target="_blank">Hawaii Tourism Authority</a></li>
+					</ul>
+				</div>
+				<div class="column col-50">
+					<h1>Contact:</h1>
+					<ul>
+						<li><a href="mailto:somemail@mail.com"/>somemail@mail.com</a></li>
+						<li>1234 Kamehameha Highway</li>
+						<li>Waikiki, HI, 90000</li>
+					</ul>
+
+					<ul class="socialmedia">
+						<li><a href="https://www.facebook.com/Hawaii/" target="_blank"><img src="./assets/icons/social/facebook.svg"/></a></li>
+						<li><a href="https://twitter.com/gohawaii" target="_blank"><img src="./assets/icons/social/twitter.svg"/></a></li>
+						<li><a href="https://www.instagram.com/gohawaii/?hl=en" target="_blank"><img src="./assets/icons/social/instagram.svg"/></a></li>
+						<li><a href="https://www.pinterest.com/gohawaii/" target="_blank"><img src="./assets/icons/social/pinterest.svg"/></a></li>
+					</ul>
+
+				</div>
+			</footer>
+		</div>
+
+		<script src="./js/script.js"></script>
+	</body>
+
+</html>
